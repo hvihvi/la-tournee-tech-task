@@ -4,6 +4,16 @@ import { Product } from "../product/types";
 export type Category = {
   ID: string;
   Nom: string;
+  Couleur: string;
+  Description: string;
+  "Sous-categories": SousCategorie[];
+  Produits: Product[];
+  Image: string;
+};
+
+export type SousCategorie = {
+  ID: string;
+  Nom: string;
   Description: string;
   Produits: Product[];
   Image: string;
