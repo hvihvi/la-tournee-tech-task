@@ -25,7 +25,7 @@ export const CategoryRow = ({ title, subtitle, image, products }: Props) => {
       </Row>
       <Text>{subtitle}</Text>
       <Row>
-        <Image alt={title} width={220} height={343} src={image} />
+        <Image alt={title} width={220} height={343} src={image} priority />
       </Row>
     </Column>
   );
