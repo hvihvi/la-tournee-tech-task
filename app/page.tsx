@@ -1,5 +1,4 @@
-import { Box } from "@/styled-system/jsx";
-import { css } from "../styled-system/css";
+import { Box } from "@/design-system/layout/Box";
 
 export default function Home() {
   return (
