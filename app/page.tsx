@@ -1,11 +1,12 @@
+import { Box } from "@/styled-system/jsx";
 import { css } from "../styled-system/css";
 
 export default function Home() {
   return (
     <main>
-      <div className={css({ fontSize: "2xl", fontWeight: "bold" })}>
+      <Box fontSize="2xl" fontWeight="bold">
         Hello 🐼!
-      </div>
+      </Box>
     </main>
   );
 }
