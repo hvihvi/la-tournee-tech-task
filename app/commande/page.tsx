@@ -2,10 +2,10 @@ import { Column } from "@/design-system/layout/Column";
 import { H1 } from "@/design-system/typography/H1";
 import { VisuallyHidden } from "@/styled-system/jsx";
 import { CategoryRow } from "./CategoryRow";
-import { getCategories } from "../api/categories";
+import { getLandingCategories } from "../api/categories/landingCategories";
 
-const Commande = () => {
-  const categories = getCategories();
+const Commande = async () => {
+  const categories = await getLandingCategories();
 
   return (
     <main>
@@ -15,11 +15,12 @@ const Commande = () => {
         </VisuallyHidden>
         {categories.map((category) => (
           <CategoryRow
-            key={category.id}
-            title={category.title}
-            subtitle={category.subtitle}
-            image={category.image}
-            products={category.products}
+            key={category.ID}
+            id={category.ID}
+            title={category.Nom}
+            subtitle={category.Description}
+            image={category.Image}
+            products={category.Produits}
           />
         ))}
       </Column>
