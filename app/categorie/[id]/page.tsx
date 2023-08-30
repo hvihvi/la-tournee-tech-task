@@ -7,7 +7,7 @@ type Props = { params: { id: string } };
 
 const Categorie = async ({ params: { id } }: Props) => {
   const category = await getCategory({ id });
-  console.log(category);
+
   return (
     <Column py="4" gap="8">
       <H1 pl="4">{category.Nom}</H1>

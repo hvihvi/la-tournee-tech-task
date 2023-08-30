@@ -9,7 +9,7 @@ const Commande = async () => {
 
   return (
     <main>
-      <Column gap="1" pl="4">
+      <Column gap="1">
         <VisuallyHidden>
           <H1>Commande La Tournée</H1>
         </VisuallyHidden>
@@ -20,7 +20,6 @@ const Commande = async () => {
             title={category.Nom}
             subtitle={category.Description}
             image={category.Image}
-            products={category.Produits}
           />
         ))}
       </Column>
