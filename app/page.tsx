@@ -10,7 +10,7 @@ const Home = () => (
     <Column p="4">
       <H1>Bienvenue sur La Tournée !</H1>
       <H2>La home est vide 😅</H2>
-      <Link href="/commande">Passer commande →</Link>
+      <Link href="/commande">Passer commande</Link>
     </Column>
   </main>
 );

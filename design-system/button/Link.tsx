@@ -19,7 +19,7 @@ export const Link = ({ children, href }: Props) => (
         fontWeight="bold"
         fontSize="16px"
       >
-        {children}
+        <Row>{children} →</Row>
       </Box>
     </NextLink>
   </Row>
