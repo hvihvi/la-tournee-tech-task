@@ -9,8 +9,8 @@ const Categorie = async ({ params: { id } }: Props) => {
   const category = await getCategory({ id });
   console.log(category);
   return (
-    <Column pl="4" py="4" gap="8">
-      <H1>{category.Nom}</H1>
+    <Column py="4" gap="8">
+      <H1 pl="4">{category.Nom}</H1>
       {category?.["Sous-categories"].map((sousCat) => (
         <SousCategorie key={sousCat.ID} sousCategorie={sousCat} />
       ))}
