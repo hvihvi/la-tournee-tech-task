@@ -1,4 +1,5 @@
 import { Link } from "@/design-system/button/Link";
+import { Box } from "@/design-system/layout/Box";
 import { Column } from "@/design-system/layout/Column";
 import { H1 } from "@/design-system/typography/H1";
 import { H2 } from "@/design-system/typography/H2";
