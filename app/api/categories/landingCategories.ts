@@ -10,8 +10,7 @@ export const getLandingCategories = async () => {
   const landingCategories: LandingCategories = await res.json();
 
   const names =
-    landingCategories?.[0]?.["Sous-categories"].map((cat) => cat.Nom) ?? [];
-
+    landingCategories?.["Sous-categories"].map((cat) => cat.Nom) ?? [];
   const categories = await getCategories();
 
   // hack: we filter categories by name, ID, Description and Image are missing from /categories/landing

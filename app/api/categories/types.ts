@@ -25,4 +25,4 @@ export type LandingCategories = {
   Description: string;
   "Sous-categories": Category[];
   Image: string;
-}[];
+};
